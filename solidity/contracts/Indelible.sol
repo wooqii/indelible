@@ -61,9 +61,9 @@ contract Indelible is IndelibleToken {
             uint tokens = 10 ** uint(token.decimals());
             //분배할 토큰의 수량을 결정 (정수로)
             totalTokens = totalTokens.add(tokens);
-            // 총 토큰에 락테아토큰의 갯수를 더한다.
+            // 총 토큰에 Indelible토큰의 갯수를 더한다.
             token.mint(post.author, tokens);
-            // 작성자에게 락테아토큰 갯수만큼 발행한다.
+            // 작성자에게 Indelible토큰 갯수만큼 발행한다.
             delete recentVotes[i];
             // 최근보팅배열을 지운다.
         }
