@@ -16,6 +16,10 @@ body {
   margin: 0 !important;
 }
 
+:global(.collapsible-body) {
+  white-space: pre-line;
+}
+
 .header {
   background: var(--brandColor);
   font-family: var(--brandFontFace);
